@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "charan",
+      "email": "charan@gmail.com",
+      "phone": "9876545643"
+    },
+    {
+      "id": "3",
+      "name": "vasanth",
+      "email": "vasanth@gmail.com",
+      "phone": "9876545698"
+    },
+    {
+      "name": "sanyu",
+      "email": "sanyu@gmail.com",
+      "phone": "0987564567",
+      "id": "1e32"
+    },
+    {
+      "id": "8fd1",
+      "name": "aravind",
+      "email": "aravind@gmail.com",
+      "phone": "4356787986"
+    },
+    {
+      "id": "8585",
+      "name": "koushik",
+      "email": "koushik@gmail.com",
+      "phone": "9857643453"
+    },
+    {
+      "name": "Akhil",
+      "email": "akhil@gmail.com",
+      "phone": "1235467854",
+      "id": "8e0e"
+    },
+    {
+      "name": "yogesh pandem",
+      "email": "yogesh@gmail.com",
+      "phone": "8653498992",
+      "id": "ee51"
+    }
+  ]
+}

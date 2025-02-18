@@ -36,27 +36,42 @@
 
 // export default App;
 
-import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './crudcomponents/Home';
-import Edit from './crudcomponents/Edit';
-import Create from './crudcomponents/Create';
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";  
+// import React from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Home from "./crudcomponents/Home";
+// import Edit from "./crudcomponents/Edit";
+// import Create from "./crudcomponents/Create";
+// import { ToastContainer } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
+// const App = () => {
+//     return (
+//         <Router basename="/CrudOperations">  
+//             <Routes>
+//                 <Route path="/" element={<Home />} />
+//                 <Route path="/create" element={<Create />} />
+//                 <Route path="/edit/:id" element={<Edit />} />
+//             </Routes>
+
+//             {/* Toast Notification */}
+//             <ToastContainer position="top-center" autoClose={3000} />
+//         </Router>
+//     );
+// };
+
+// export default App;
+
+import React from "react";
+import { Provider } from "react-redux";
+import BookContainer from "./reduxcompo/BookContainer";
+import store from "./redux/bookex/store";
 const App = () => {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/create' element={<Create />} />  
-                <Route path='/edit/:id' element={<Edit />} />  
-            </Routes>
-
-            <ToastContainer position="top-center" autoClose={3000} />
-        </BrowserRouter>
+        <Provider store={store}>
+            <h1>Redux Book Store</h1>
+            <BookContainer />
+        </Provider>
     );
 };
 
 export default App;
-
